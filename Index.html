@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/corpo.css">
+    <link rel="stylesheet" href="./css/forca.css">
+    <link rel="stylesheet" href="./css/palavras.css">
+    <link rel="stylesheet" href="./css/botoes.css">
+    <link rel="stylesheet" href="./css/screens.css">
+    <link rel="stylesheet" href="./css/bd.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>Jogo da Forca</title>
+</head>
+
+<body>
+    <main>
+        <div id='start-screen' style='display:block'>
+            <button id='start-btn' class="start" onclick="startGame()">Start Game</button>
+            <button id='newWord-btn' class="new" onclick="newWord()">New Word</button>
+        </div>
+        <div id="palavra-nova" style="display:none">
+            <form id="form-palavra">
+                <button id="close-btn">&#10008</button>
+                <input type="text" placeholder="Insert a new Word" name="palavra" id="newWord-input" oninput="handleInput(event)" />
+                <button type="submit" id="submit-btn">SAVE</button>
+            </form>
+        </div>
+
+        <div id="container" class="container-class" style="display:none">
+            <section id="forca" class="background-class">
+                <div id="corda"></div>
+                <div id="tronco3"></div>
+                <div id="tronco2"></div>
+                <div id="tronco1"></div>
+                <div id="grama"></div>
+            </section>
+            <section id="corpo-humano">
+                <div id="corpo-humano-div" class="boneco">
+                    <div id="braco-direito-div"></div>
+                    <div id="braco-esquerdo-div"></div>
+                    <div id="perna-direita-div"></div>
+                    <div id="perna-esquerda-div"></div>
+                    <div id="corpo-div"></div>
+                    <div id="cabeca-div"></div>
+                </div>
+            </section>
+            <section id="palavra-container">
+                <div id="palavra-div-position">
+                    <div id="linha1"></div>
+                </div>
+            </section>
+            <button id="reset-btn" class="metal radial" onclick="resetGame()">↻</button>
+            <button id="cancel-btn" class="metal radial" onclick="stop()">&#9841</button>
+            <section id="container-btn">
+                <div id="row1">
+                    <button class="metal linear square" id="Q">Q</button>
+                    <button class="metal linear square" id="W">W</button>
+                    <button class="metal linear square" id="E">E</button>
+                    <button class="metal linear square" id="R">R</button>
+                    <button class="metal linear square" id="T">T</button>
+                    <button class="metal linear square" id="Y">Y</button>
+                    <button class="metal linear square" id="U">U</button>
+                    <button class="metal linear square" id="I">I</button>
+                    <button class="metal linear square" id="O">O</button>
+                    <button class="metal linear square" id="P">P</button>
+                </div>
+                <div id="row2">
+                    <button class="metal linear square" id="A">A</button>
+                    <button class="metal linear square" id="S">S</button>
+                    <button class="metal linear square" id="D">D</button>
+                    <button class="metal linear square" id="F">F</button>
+                    <button class="metal linear square" id="G">G</button>
+                    <button class="metal linear square" id="H">H</button>
+                    <button class="metal linear square" id="J">J</button>
+                    <button class="metal linear square" id="K">K</button>
+                    <button class="metal linear square" id="L">L</button>
+                </div>
+                <div id="row3">
+                    <button class="metal linear square" id="Z">Z</button>
+                    <button class="metal linear square" id="X">X</button>
+                    <button class="metal linear square" id="C">C</button>
+                    <button class="metal linear square" id="V">V</button>
+                    <button class="metal linear square" id="B">B</button>
+                    <button class="metal linear square" id="N">N</button>
+                    <button class="metal linear square" id="M">M</button>
+                    <!-- <input name="m" type="button" value="m" class="metal linear"/> -->
+                </div>
+            </section>
+
+        </div>
+
+        <div id='gameover-screen' class='screen' style='display:none'>
+            <h1 id="gameover-h1" class="title">
+                Game over
+                <span class="drop"></span>
+                <span class="drop"></span>
+                <span class="drop"></span>
+                <span class="drop"></span>
+                <span class="drop"></span>
+              </h1>
+            <button id='restart-btn' class="restart" onclick='restartGame()'>Restart Game</button>
+        </div>
+
+        <div id='win-screen' class='screen' style='display:none'>
+            <h1 id="win-h1" class="title">
+                You win!
+                <div id="fire1" class="firework"></div>
+                <div id="fire2" class="firework"></div>
+                <div id="fire3" class="firework"></div>
+                <div id="fire4" class="firework"></div>
+                <div id="fire5" class="firework"></div>
+                <div id="fire6" class="firework"></div>
+              </h1>
+            <button id='restart-btn' class="restart" onclick='restartGame()'>Restart Game</button>
+        </div>
+
+    </main>
+
+    <script src="./js/erros.js"></script>
+    <script src="./js/jogo.js"></script>
+    <script src="./js/start.js"></script>
+    <script src="./js/bd.js"></script>
+</body>
+
+</html>

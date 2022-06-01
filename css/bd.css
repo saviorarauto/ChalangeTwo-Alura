@@ -1,0 +1,102 @@
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One&display=swap);
+
+#palavra-nova{
+    background: #f8f4e5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    width: 50%;
+    padding: 50px 100px;
+    border: 2px solid rgba(0,0,0,1);
+    box-shadow: 15px 15px 1px #ffa580, 15px 15px 1px 2px rgba(0,0,0,1)
+}
+
+#close-btn{
+    position: absolute;
+    top: 5%;
+    right: 2%;
+    width: 4%;
+    display: flex;
+    line-height: 20px;
+    justify-content: center;
+    border: 2px solid rgba(0,0,0,1);
+    transition: 300ms ease-in-out;
+}
+
+#close-btn:hover{
+    position: absolute;
+    top: 5%;
+    right: 2%;
+    width: 4%;
+    display: flex;
+    line-height: 20px;
+    justify-content: center;
+    border: 2px solid rgba(0,0,0,1);
+    filter: invert(100%);
+    transform: scale(1.5);
+}
+
+
+#newWord-input{
+    display: block;
+    width: 100%;
+    font-size: 25px;
+    text-align: center;
+    line-height: calc(14px* 2);
+    font-family: 'Fjalla One';
+    margin-bottom: calc(14px* 2);
+    border: none;
+    border-bottom: 5px solid rgba(0,0,0,1);
+    background: #f8f4e5;
+    min-width: 250px;
+    padding-left: 5px;
+    outline: none;
+    color: rgba(0,0,0,1);
+}
+  
+#newWord-input:focus{
+    border-bottom: 5px solid #ffa580;
+}
+
+#submit-btn{
+    display: block;
+    margin: 0 auto;
+    line-height: calc(14px* 2);
+    padding: 0 20px;
+    background: #ffa580;
+    letter-spacing: 2px;
+    transition: .2s all ease-in-out;
+    outline: none;
+    border: 1px solid rgba(0,0,0,1);
+    box-shadow: 3px 3px 1px #ffc8ff, 3px 3px 1px 1px rgba(0,0,0,1);
+    font-family: 'Fjalla One';
+    font-size: 20px;
+}
+
+  
+#submit-btn:hover{
+    background: rgba(0,0,0,1);
+    color: white;
+    border: 1px solid rgba(0,0,0,1);
+}
+
+  
+#submit-btn::selection{
+    background: #ffc8ff;
+}
+
+
+#newWord-input:-webkit-autofill,
+#newWord-input:-webkit-autofill:hover, 
+#newWord-input:-webkit-autofill{
+    border-bottom: 5px solid #ffc8ff;
+    -webkit-text-fill-color: #2A293E;
+    -webkit-text-fill-color: #2A293E;
+    -webkit-box-shadow: 0 0 0px 1000px #f8f4e5 inset;
+    box-shadow: 0 0 0px 1000px #f8f4e5 inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+  
