@@ -11,7 +11,7 @@
     height: 800px;
     position: relative;
     border: 1px solid #ccc;
-    background-image: url(/imgs/background.jpg);
+    background-image: url(../imgs/background.jpg);
     background-size: 100% 100%;
     border-radius: 40px;
     box-shadow: 0px 10px 10px 0px rgba(0, 0, 0);
@@ -24,7 +24,7 @@
     height: 800px;
     position: relative;
     border: 1px solid #ccc;
-    background-image: url(/imgs/background.jpg);
+    background-image: url(../imgs/background.jpg);
     background-size: 100% 100%;
     border-radius: 40px;
     filter: saturate(0%);
@@ -34,7 +34,7 @@
     width: 100%;
     height: 100px;
     position: absolute;
-    background-image: url(/imgs/grama.png);
+    background-image: url(../imgs/grama.png);
     background-size: 150px 100px;
     background-repeat: repeat-x;
     bottom: 0;
@@ -45,7 +45,7 @@
     width: 80px;
     height: 85%;
     position: absolute;
-    background-image: url(/imgs/tronco1.png);
+    background-image: url(../imgs/tronco1.png);
     background-size: auto 100%;
     background-repeat: no-repeat;
     bottom: 0px;
@@ -56,7 +56,7 @@
     width: 80%;
     height: 90px;
     position: absolute;
-    background-image: url(/imgs/tronco2.png);
+    background-image: url(../imgs/tronco2.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     top: 20%;
@@ -67,7 +67,7 @@
     width: 15%;
     height: 25%;
     position: absolute;
-    background-image: url(/imgs/tronco3.png);
+    background-image: url(../imgs/tronco3.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     top: 30%;
@@ -78,7 +78,7 @@
     width: 110px;
     height: 225px;
     position: absolute;
-    background-image: url(/imgs/corda.png);
+    background-image: url(../imgs/corda.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     top: 25%;
@@ -89,7 +89,7 @@
     width: 110px;
     height: 225px;
     position: absolute;
-    background-image: url(/imgs/corda.png);
+    background-image: url(../imgs/corda.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     top: 25%;

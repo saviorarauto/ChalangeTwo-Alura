@@ -29,7 +29,7 @@
     position: absolute;
     width: 30%;
     height: 30%;
-    background-image: url(/imgs/cabeçaCorda.png);
+    background-image: url(../imgs/cabeçaCorda.png);
     background-size: 100% 100%;
     left: 145px;
 }
@@ -38,7 +38,7 @@
     position: absolute;
     width: 30%;
     height: 30%;
-    background-image: url(/imgs/cabecaQuaseCorda.png);
+    background-image: url(../imgs/cabecaQuaseCorda.png);
     background-size: 100% 100%;
     left: 145px;
 }
@@ -47,7 +47,7 @@
     position: absolute;
     width: 30%;
     height: 30%;
-    background-image: url(/imgs/cabeçaCordaMorte.png);
+    background-image: url(../imgs/cabeçaCordaMorte.png);
     background-size: 100% 100%;
     left: 145px;
 }
@@ -57,7 +57,7 @@
     top: 105px;
     width: 30%;
     height: 35%;
-    background-image: url(/imgs/corpo-desmontado.png);
+    background-image: url(../imgs/corpo-desmontado.png);
     background-size: 100% 100%;
     left: 145px;
 }
@@ -67,7 +67,7 @@
     top: 35px;
     width: 30%;
     height: 30%;
-    background-image: url(/imgs/braco-direito.png);
+    background-image: url(../imgs/braco-direito.png);
     background-size: 100% 100%;
     left: 60%;
 }
@@ -85,7 +85,7 @@
     top: 35px;
     width: 30%;
     height: 30%;
-    background-image: url(/imgs/braco-esquerdo.png);
+    background-image: url(../imgs/braco-esquerdo.png);
     background-size: 100% 100%;
     left: 4%;
 }
@@ -103,7 +103,7 @@
     top: 59%;
     width: 20%;
     height: 25%;
-    background-image: url(/imgs/perna-direita1.png);
+    background-image: url(../imgs/perna-direita1.png);
     background-size: 100% 100%;
     left: 49%;
 }
@@ -113,7 +113,7 @@
     top: 59%;
     width: 20%;
     height: 25%;
-    background-image: url(/imgs/perna-esquerda1.png);
+    background-image: url(../imgs/perna-esquerda1.png);
     background-size: 100% 100%;
     left: 24.5%;
 }
