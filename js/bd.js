@@ -7,6 +7,7 @@ botaoFechar.addEventListener("click", function (event) {
 function handleInput(e) {
     var ss = e.target.selectionStart;
     var se = e.target.selectionEnd;
+    e.target.value = e.target.value.split(" ").join("");
     e.target.value = e.target.value.toUpperCase();
     e.target.selectionStart = ss;
     e.target.selectionEnd = se;
@@ -19,6 +20,7 @@ botaoAdicionarPalavra.addEventListener("click", function (event) {
     let novaPalavra = form.palavra.value;
     if(novaPalavra!=""){
         atualizarStorage(novaPalavra);
+        alert("Você adicionou a palavra " + novaPalavra)
     }
     form.reset();
 })

@@ -1,5 +1,6 @@
-let palavras = ["KEMELY"];
+let palavras = ["GUARDA-CHUVA", "LIVRO", "ECHODOT", "TECLADO", "TELEVISOR", "SMARTWATCH", "CACHORRO", "MALA", "VIAGEM", "AEROPORTO", "GELADEIRA", "MICROONDAS", "PINGUIM", "ONOMATOPEIA", "GINECOLOGISTA", "BOMBEIRO", "IGREJA", "ESPELHO", "CACHIMBO", "CORUJA", "UNICORNIO"];
 preLoadStorage(palavras);
+let hasTrace = false;
 
 function preLoadStorage(palavras){
     let arrayStorage = JSON.parse(localStorage.getItem('arrayPalavras') || '[]');
@@ -68,8 +69,17 @@ function sortearPalavra(palavras) {
 };
 
 function montarPalavra(palavraSorteada) {
+    let positionTrace = [];
     for (let i = 0; i < palavraSorteada.length; i++) {
+        let letraposition = palavraSorteada[i]
+        if(letraposition=="-"){
+            hasTrace = true;
+            positionTrace.push(i)
+        }
         addNewLetter()
+    }
+    if(hasTrace){
+        posicionarLetra("-", positionTrace);
     }
 }
 
